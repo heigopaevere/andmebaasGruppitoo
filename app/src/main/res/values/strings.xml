@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SQLiteAndmebaas</string>
+    <string name="tekst">Lisa tooteid andmebaasi</string>
+    <string name="toote_string">Nimi</string>
+    <string name="kogus_string">Kogus</string>
+    <string name="hind_string">Hind</string>
+    <string name="lisa">lisa</string>
+</resources>
