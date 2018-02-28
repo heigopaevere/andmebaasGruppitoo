@@ -61,6 +61,7 @@ public class KuvaDetailid extends AppCompatActivity {
     public void tagasi(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        ///kommentaar
 }
 
 
