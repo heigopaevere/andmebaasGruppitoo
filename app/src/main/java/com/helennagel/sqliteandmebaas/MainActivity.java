@@ -112,32 +112,6 @@ public class MainActivity extends AppCompatActivity {
         nimekiri = findViewById(R.id.nimekiri);
         nimekiri.setAdapter(adapter);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public void teade(String message){
         //standard teatestruktuur
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
