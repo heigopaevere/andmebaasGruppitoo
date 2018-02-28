@@ -16,6 +16,7 @@ public class DbToode {
     public DbToode(Context s){
         sisu=s;
     }
+    // loome ava meetodi, mis avab andmebaasi
     public DbToode ava(){
         // kasutades dbhelperit saame kätte andmebaasi konteksti mille omista,e andmebaasile
         try{
@@ -28,7 +29,9 @@ public class DbToode {
             return this;
         }
     }
+    // meetod sulge, mis paneb andmebaasi kinni
     public void sulge() { db.close();}
+    // meetod insert, mis laseb meil andmebaasi sisestada andmeid. parameetriteks on nimi,kogus ja hind
     public void insert(String nimi, int kogus, double hind){
         ContentValues values = new ContentValues();
         values.put(dbHelper.NIMI, nimi);
@@ -45,6 +48,7 @@ public class DbToode {
         }
         return s;
     }
+    // meetod valitud  mis crusori abiga laseb meil listviewst valitud andmeid kuvada teises activitys
     public Cursor valitud(long id){
         String[] tulbad = new String[]{dbHelper.ID, dbHelper.NIMI, dbHelper.KOGUS, dbHelper.HIND};
         Cursor s = db.query(dbHelper.TABELI_NIMI, tulbad, dbHelper.ID + "=" + id,
@@ -54,18 +58,23 @@ public class DbToode {
         }
         return s;
     }
+    // meetod kustuta, mis kustutab andmed andmebaasist
     public void kustuta(long id){
         ava();
         db.delete(dbHelper.TABELI_NIMI,dbHelper.ID + "=" + id, null);
         sulge();
     }
+    // uuenda meetod mis uuendab andmeid andmebaasis
     public void uuenda(long id, String nimi, int kogus, double hind){
+        // avame andmebaasi
         ava();
+        // säilitame väärtused millega uuendame tabelis olevaid
         ContentValues values = new ContentValues();
         values.put(dbHelper.NIMI, nimi);
         values.put(dbHelper.KOGUS, kogus);
         values.put(dbHelper.HIND, hind);
         db.update(dbHelper.TABELI_NIMI,values,dbHelper.ID + "=" + id, null);
+        // sulgeme andmebaasi
         sulge();
     }
     // loome andmebaasi abistaja klassi mis pärib sqliteopenhelper klassi omadused
