@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SQLiteAndmebaas.iml" filepath="$PROJECT_DIR$/SQLiteAndmebaas.iml" />
+      <module fileurl="file://C:\Users\Nagel\Desktop\SQLiteAndmebaas\SQLiteAndmebaas.iml" filepath="C:\Users\Nagel\Desktop\SQLiteAndmebaas\SQLiteAndmebaas.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Nagel\Desktop\SQLiteAndmebaas\app\app.iml" filepath="C:\Users\Nagel\Desktop\SQLiteAndmebaas\app\app.iml" />
     </modules>
   </component>
 </project>

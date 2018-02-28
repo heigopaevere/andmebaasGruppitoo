@@ -28,7 +28,8 @@
                 android:layout_width="wrap_content"
                 android:layout_margin="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/toote_string"/>
+                android:text="@string/toote_string"
+                android:textColor="@color/colorBlack"/>
             <EditText
                 android:id="@+id/tooteNimi"
                 android:layout_height="wrap_content"
@@ -36,7 +37,9 @@
                 android:layout_margin="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:ems="10"
-                android:text=""/>
+                android:text=""
+                android:hint="@string/väli"
+                android:textColorHint="@color/colorAccent"/>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -48,7 +51,8 @@
                 android:layout_width="wrap_content"
                 android:layout_margin="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/kogus_string"/>
+                android:text="@string/kogus_string"
+                android:textColor="@color/colorBlack"/>
             <EditText
                 android:id="@+id/tooteKogus"
                 android:layout_height="wrap_content"
@@ -56,7 +60,9 @@
                 android:layout_margin="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:ems="10"
-                android:text=""/>
+                android:text=""
+                android:hint="@string/väli"
+                android:textColorHint="@color/colorAccent"/>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -68,7 +74,8 @@
                 android:layout_width="wrap_content"
                 android:layout_margin="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/hind_string"/>
+                android:text="@string/hind_string"
+                android:textColor="@color/colorBlack"/>
             <EditText
                 android:id="@+id/tooteHind"
                 android:layout_height="wrap_content"
@@ -76,14 +83,17 @@
                 android:layout_margin="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:ems="10"
-                android:text=""/>
+                android:text=""
+                android:hint="@string/väli"
+                android:textColorHint="@color/colorAccent"/>
             <TextView
                 android:id="@+id/textview5"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_margin="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="€"/>
+                android:text="€"
+                android:textColor="@color/colorBlack"/>
         </TableRow>
     </TableLayout>
     <LinearLayout
@@ -96,7 +106,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/btn_lisa"
             android:layout_weight="1"
-            android:text="@string/lisa"/>
+            android:text="@string/lisa"
+            android:background="@color/colorButton"/>
     </LinearLayout>
     <ListView
         android:layout_width="match_parent"

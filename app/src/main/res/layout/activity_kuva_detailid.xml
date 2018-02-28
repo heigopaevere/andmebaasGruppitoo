@@ -22,7 +22,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/toote_string" />
+                android:text="@string/toote_string"
+                android:textColor="@color/colorBlack"/>
 
             <EditText
                 android:id="@+id/nimiDetail"
@@ -44,7 +45,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/kogus_string" />
+                android:text="@string/kogus_string"
+                android:textColor="@color/colorBlack"/>
             <EditText
                 android:id="@+id/kogusDetail"
                 android:layout_width="wrap_content"
@@ -65,7 +67,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/hind_string" />
+                android:text="@string/hind_string"
+                android:textColor="@color/colorBlack"/>
             <EditText
                 android:id="@+id/hindDetail"
                 android:layout_width="wrap_content"
@@ -93,12 +96,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/uuenda_string"/>
+            android:text="@string/uuenda_string"
+            android:background="@color/colorButton"/>
         <Button
             android:id="@+id/btn_kustuta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/kustuta_string"/>
+            android:text="@string/kustuta_string"
+            android:background="@color/colorButton"/>
     </LinearLayout>
 </LinearLayout>

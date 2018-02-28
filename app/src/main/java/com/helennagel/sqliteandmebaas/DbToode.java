@@ -88,7 +88,7 @@ public class DbToode {
         public static final String HIND = "hind";
         // loome tabli kuhu lisame tulbad ja määrame ära nende tüübid
         public static final String CREATE_TABLE = "CREATE TABLE " + TABELI_NIMI + " ( " + ID +
-                " INTEGER PRIMARY KET AUTOINCREMENT , " + NIMI + " TEXT , " + KOGUS + " INTEGER , "
+                " INTEGER PRIMARY KEY AUTOINCREMENT , " + NIMI + " TEXT , " + KOGUS + " INTEGER , "
                 + HIND + " DOUBLE );";
         // anname andmebaasile versiooni numbri, sest iga kord kui andmebaasi uuendame uuendame ka selle versiooni
         public static final int VERSION = 1;
